@@ -1,0 +1,26 @@
+.text {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+button {
+    width: 202px;
+    height: 48px;
+    margin: 0 8px;
+
+    background-color: var(--gray);
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+}
+button.selected {
+    background-color: var(--primary);
+}
+button:hover {
+    opacity: 0.9;
+}
+button:active {
+    opacity: 1;
+}
