@@ -6,7 +6,7 @@ export async function HotPosts(limit: number) {
     )
     .then(res => {
         if(res.status !== 200) {
-            console.log('Falha ao requisitar os posts hot de subreddit reactjs')
+            console.error('Falha ao requisitar os hot posts de subreddit reactjs')
         }
         
         if (res.data !== null ) {
@@ -21,7 +21,7 @@ export async function NewestPosts(limit: number) {
     `)
     .then(res => {
         if(res.status !== 200) {
-            console.log('Falha ao requisitar os posts news de subreddit reactjs')
+            console.error('Falha ao requisitar os news posts de subreddit reactjs')
         }
         
         if (res.data !== null ) {
@@ -36,7 +36,7 @@ export async function TopPosts(limit: number) {
     `)
     .then(res => {
         if(res.status !== 200) {
-            console.log('Falha ao requisitar os posts top de subreddit reactjs')
+            console.error('Falha ao requisitar os top/rising posts de subreddit reactjs')
         }
 
         if (res.data !== null ) {
