@@ -8,7 +8,6 @@ import { Home } from './pages/Home';
 const Routes = () => {
     return (
         <BrowserRouter>
-            <Header />
             <Route component={Home} path="/" exact/>
         </BrowserRouter>
     );

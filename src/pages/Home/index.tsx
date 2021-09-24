@@ -8,6 +8,7 @@ import { Feed } from '../../components/Feed';
 import { HotPosts, NewestPosts, TopPosts } from '../../services/get.posts';
 
 import './styles.css'
+import { Header } from '../../components/Header';
 
 export const Home: React.FC = () => {
     const INITIALIZE_LIMIT = 10
@@ -64,7 +65,8 @@ export const Home: React.FC = () => {
     }
 
     return (
-        <div className="main">
+        <>
+            <Header />
             <div className="wrap">
                 <div className="container-navigation">
                     <NavButton 
@@ -98,6 +100,6 @@ export const Home: React.FC = () => {
                     />
                 }
             </div>
-        </div>
+        </>
     );
 }
