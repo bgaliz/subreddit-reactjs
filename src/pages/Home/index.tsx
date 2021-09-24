@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
 
     const [posts, setPosts] = useState([]);
     const [limitOfPosts, setLimitOfPosts] = useState(INITIALIZE_LIMIT);
-    const [topicSelected, setTopicSelected] = useState({hot: true, news: false, rising: false});
+    const [topicSelected, setTopicSelected] = useState('Hot');
 
     useEffect(() => {
         const inicialize = async () => {
@@ -38,7 +38,7 @@ export const Home: React.FC = () => {
     },[limitOfPosts])
 
     async function handleGetHotPosts() {
-        setTopicSelected({hot: true, news: false, rising: false})
+        setTopicSelected('Hot')
         await HotPosts(limitOfPosts)
         .then(list => {
             setPosts(list);
@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
     }
 
     async function handleGetNewestPosts() {
-        setTopicSelected({hot: false, news: true, rising: false})
+        setTopicSelected('News')
         await NewestPosts(limitOfPosts)
         .then(list => {
             setPosts(list);
@@ -55,7 +55,7 @@ export const Home: React.FC = () => {
     }
 
     async function handleGetRisingPosts() {
-        setTopicSelected({hot: false, news: false, rising: true})
+        setTopicSelected('Rising')
         await TopPosts(limitOfPosts)
         .then(list => {
             setPosts(list);
@@ -70,9 +70,9 @@ export const Home: React.FC = () => {
     }
 
     function getPosts() {
-        if(topicSelected.hot){
+        if(topicSelected === 'Hot'){
             handleGetHotPosts();
-        } else if (topicSelected.news){
+        } else if (topicSelected === 'News'){
             handleGetNewestPosts();
         } else {
             handleGetRisingPosts();
@@ -86,17 +86,17 @@ export const Home: React.FC = () => {
                     <NavButton 
                         text="Hot" 
                         onClick={handleGetHotPosts} 
-                        state={topicSelected.hot}
+                        state={topicSelected === 'Hot'}
                     />
                     <NavButton 
                         text="News" 
                         onClick={handleGetNewestPosts} 
-                        state={topicSelected.news}
+                        state={topicSelected === 'News'}
                     />
                     <NavButton 
                         text="Rising" 
                         onClick={handleGetRisingPosts} 
-                        state={topicSelected.rising}
+                        state={topicSelected === 'Rising'}
                     />
                 </div>
                 <div className="container-feed">
