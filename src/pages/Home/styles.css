@@ -8,12 +8,7 @@
     padding: 19px 56px;
 }
 
-.container-loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+.container-loading,
 .container-navigation {
     display: flex;
     justify-content: center;
