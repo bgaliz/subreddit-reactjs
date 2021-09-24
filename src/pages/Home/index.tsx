@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 
 import ReactLoading from 'react-loading';
 
+import { Header } from '../../components/Header';
 import { NavButton } from '../../components/NavButton';
 import { Feed } from '../../components/Feed';
 
 import { HotPosts, NewestPosts, TopPosts } from '../../services/get.posts';
 
 import './styles.css'
-import { Header } from '../../components/Header';
 
 export const Home: React.FC = () => {
     const INITIALIZE_LIMIT = 10
