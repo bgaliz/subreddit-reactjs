@@ -11,7 +11,7 @@ import { HotPosts, NewestPosts, TopPosts } from '../../services/get.posts';
 import './styles.css'
 
 export const Home: React.FC = () => {
-    const INITIALIZE_LIMIT = 10
+    const INITIALIZE_LIMIT = 25
     const MAX_LIMIT = 100
 
     const [posts, setPosts] = useState([]);
@@ -59,7 +59,7 @@ export const Home: React.FC = () => {
 
     function handleGetMorePosts() {
         if(limitOfPosts <= MAX_LIMIT) {
-            setLimitOfPosts(limitOfPosts + 10);
+            setLimitOfPosts(limitOfPosts + 25);
         }
         handleGetPostsByTopicChoosen(topicSelected)
     }

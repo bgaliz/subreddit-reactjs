@@ -1,5 +1,6 @@
 export const light_theme = {
     '--primary': '#6324C6',
+    '--primary-tint': '#a270f1',
     '--gray': '#A7B0BE',
     '--gray-dark': '#4C5667',
     '--text': '#000',
@@ -10,6 +11,7 @@ export const light_theme = {
 
 export const dark_theme = {
     '--primary': '#000',
+    '--primary-tint': '#a270f1',
     '--gray': '#A7B0BE',
     '--gray-dark': '#4C5667',
     '--text': '#fff',
