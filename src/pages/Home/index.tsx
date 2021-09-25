@@ -5,6 +5,7 @@ import ReactLoading from 'react-loading';
 import { Header } from '../../components/Header';
 import { NavButton } from '../../components/NavButton';
 import { Feed } from '../../components/Feed';
+import { FlyingButton } from '../../components/FlyingButton';
 
 import { HotPosts, NewestPosts, TopPosts } from '../../services/get.posts';
 
@@ -100,6 +101,7 @@ export const Home: React.FC = () => {
                     />
                 }
             </div>
+            <FlyingButton />
         </>
     );
 }

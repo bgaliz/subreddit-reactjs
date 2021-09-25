@@ -1,0 +1,46 @@
+.flying-button {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: calc(0% + 25px);
+    
+    background-color: #a270f1;
+    border-radius: 40px;
+}
+.flying-button svg {
+    width: 20px;
+    height: 20px;
+}
+.flying-button.showButton {
+    animation-name: ShowHideButton;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+.flying-button.hideButton {
+    animation-name: ShowHideButtonReverse;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ShowHideButton {
+    from {
+        right: calc(0% - 100px);
+    }
+    to {
+        right: calc(0% + 15px);
+    }
+}
+
+@keyframes ShowHideButtonReverse {
+    from {
+        right: calc(0% + 15px );
+    }
+    to {
+        right: calc(0% - 100px);
+    }
+}
