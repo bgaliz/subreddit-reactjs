@@ -10,7 +10,7 @@
     z-index: 9;
     transform: translate(50%, 50%);
     bottom: 50%;
-    right: calc(50% + 18px);
+    right: calc(50% + 15px);
 }
 
 .Moon {
@@ -18,14 +18,14 @@
     z-index: 9;
     transform: translate(50%, 50%);
     bottom: 50%;
-    right: calc(50% - 18px);
+    right: calc(50% - 15px);
     color: var(--white);
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 80px;
+    width: 70px;
     height: 40px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 input:checked + .slider {
-    background-color: var(--orange);
+    background-color: #a270f1;
 }
 
 input:focus + .slider {
@@ -69,9 +69,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(40px);
-    -ms-transform: translateX(40px);
-    transform: translateX(40px);
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
 }
 
 .slider.round {
