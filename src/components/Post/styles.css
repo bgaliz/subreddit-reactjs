@@ -56,8 +56,8 @@
     font-weight: 400;
     color: var(--gray);
 }
-.details-post .sentBy > span{
-    color: var(--primary);
+.details-post .sentBy > a{
+    color: #6324C6;
 }
 .details-post .domain {
     width: 50%;

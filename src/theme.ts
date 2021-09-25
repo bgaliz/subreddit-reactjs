@@ -5,6 +5,7 @@ export const light_theme = {
     '--text': '#000',
     '--white': '#fff',
     '--background': '#fff',
+    '--orange': '#FFB800'
 }
 
 export const dark_theme = {
@@ -13,5 +14,6 @@ export const dark_theme = {
     '--gray-dark': '#4C5667',
     '--text': '#fff',
     '--white': '#fff',
-    '--background': '#171521',
+    '--background': '#201f2b',
+    '--orange': '#FFB800'
 }

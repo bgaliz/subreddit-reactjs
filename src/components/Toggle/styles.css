@@ -10,7 +10,7 @@
     z-index: 9;
     transform: translate(50%, 50%);
     bottom: 50%;
-    right: calc(50% + 13px);
+    right: calc(50% + 18px);
 }
 
 .Moon {
@@ -18,14 +18,15 @@
     z-index: 9;
     transform: translate(50%, 50%);
     bottom: 50%;
-    right: calc(50% - 13px);
+    right: calc(50% - 18px);
+    color: var(--white);
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 80px;
+    height: 40px;
 }
 
 .switch input { 
@@ -41,7 +42,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--gray);
+    background-color: var(--gray-dark);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -49,10 +50,10 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 30px;
+    width: 30px;
+    left: 6px;
+    bottom: 5px;
     background-color: var(--white);
     -webkit-transition: .4s;
     transition: .4s;
@@ -60,7 +61,7 @@
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--orange);
 }
 
 input:focus + .slider {
@@ -68,9 +69,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
 }
 
 .slider.round {

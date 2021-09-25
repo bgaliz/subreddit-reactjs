@@ -20,7 +20,8 @@ export const Header: React.FC = () => {
             document.documentElement.style.setProperty(`--gray-dark`, `${light_theme['--gray-dark']}`);
             document.documentElement.style.setProperty(`--text`, `${light_theme['--text']}`);
             document.documentElement.style.setProperty(`--white`, `${light_theme['--white']}`);
-            document.documentElement.style.setProperty(`--background`, `${light_theme['--background']}`); 
+            document.documentElement.style.setProperty(`--background`, `${light_theme['--background']}`);
+            document.documentElement.style.setProperty(`--orange`, `${light_theme['--orange']}`); 
         } else {
             document.documentElement.style.setProperty(`--primary`, `${dark_theme['--primary']}`);
             document.documentElement.style.setProperty(`--gray`, `${dark_theme['--gray']}`);
@@ -28,6 +29,7 @@ export const Header: React.FC = () => {
             document.documentElement.style.setProperty(`--text`, `${dark_theme['--text']}`);
             document.documentElement.style.setProperty(`--white`, `${dark_theme['--white']}`);
             document.documentElement.style.setProperty(`--background`, `${dark_theme['--background']}`);
+            document.documentElement.style.setProperty(`--orange`, `${dark_theme['--orange']}`); 
         }
         setThemeIsLight(!themeIsLight);
     }

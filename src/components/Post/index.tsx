@@ -10,7 +10,8 @@ interface PostProps {
     domain: string,
     image: string,
     created_at: number,
-    permalink: string
+    permalink: string,
+    style: React.CSSProperties
 }
 
 export const Post: React.FC<PostProps> = ({
@@ -19,7 +20,8 @@ export const Post: React.FC<PostProps> = ({
     domain,
     image,
     created_at,
-    permalink
+    permalink,
+    style
 }) => {
     const [dateTime, setDateTime] = useState('');
 
@@ -57,7 +59,7 @@ export const Post: React.FC<PostProps> = ({
     }
 
     return (
-        <article className="container-post" >
+        <article className="container-post" style={{...style}}>
             <div className="container-imagem">
                     {
                         handleGetImageOrSvg()

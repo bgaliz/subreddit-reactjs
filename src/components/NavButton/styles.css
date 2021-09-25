@@ -16,7 +16,7 @@ button {
     cursor: pointer;
 }
 button.selected {
-    background-color: var(--primary);
+    background-color: #6324C6;
 }
 button:hover {
     opacity: 0.9;

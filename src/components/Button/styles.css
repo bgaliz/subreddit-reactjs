@@ -11,7 +11,7 @@
 
     font-size: 1.25rem;
     color: var(--white);
-    background-color: var(--primary);
+    background-color: #6324C6;
 }
 .seeMoreArticles svg {
     position: absolute;

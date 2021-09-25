@@ -17,6 +17,6 @@
 }
 
 .JS {
-    color: #FFB800;
+    color: var(--orange);
 }
 
